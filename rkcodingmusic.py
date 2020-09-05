@@ -49,7 +49,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         return cls(discord.FFmpegPCMAudio(filename, **ffmpeg_options), data=data)
 
 
-client = commands.Bot(command_prefix='?')
+client = commands.Bot(command_prefix='$')
 
 status = ['Jamming out to music!', 'Eating!', 'Sleeping!']
 
@@ -116,4 +116,4 @@ async def stop(ctx):
 async def change_status():
     await client.change_presence(activity=discord.Game(choice(status)))
 
-client.run('token')
+client.run('NzUwOTY0MTY3OTAwMzk3Njky.X1CL4Q.7x7UneSO0Qx8Ax5XhHTcJmXesTY')
